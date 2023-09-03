@@ -37,7 +37,7 @@
 
 //  CVS Log
 //
-//  $Id: tst_bench_top.v,v 1.8 2006-09-04 09:08:51 rherveille Exp $
+//  $Id: pes_i2c_tb.v,v 1.8 2006-09-04 09:08:51 rherveille Exp $
 //
 //  $Date: 2006-09-04 09:08:51 $
 //  $Revision: 1.8 $
@@ -66,7 +66,7 @@
 //               Added headers.
 //
 
-module tst_bench_top();
+module pes_i2c_tb();
 
 //Conditionally enable vlog_tb_utils if running under FuseSoC
 `ifdef WITH_VTU
@@ -205,7 +205,7 @@ module tst_bench_top();
 	  begin
 	      `ifdef WAVES
 	         $shm_open("waves");
-	         $shm_probe("AS",tst_bench_top,"AS");
+	         $shm_probe("AS",pes_i2c_tb,"AS");
 	         $display("INFO: Signal dump enabled ...\n\n");
 	      `endif
 
@@ -215,8 +215,8 @@ module tst_bench_top();
 	      $display("\nstatus: %t Testbench started\n\n", $time);
 
 //	      $dumpfile("bench.vcd");
-//	      $dumpvars(1, tst_bench_top);
-//	      $dumpvars(1, tst_bench_top.i2c_slave);
+//	      $dumpvars(1, pes_i2c_tb);
+//	      $dumpvars(1, pes_i2c_tb.i2c_slave);
 
 	      // initially values
 	      clk = 0;
