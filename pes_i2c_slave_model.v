@@ -66,7 +66,7 @@
 //               Added headers.
 //
 
-module i2c_slave_model (scl, sda);
+module pi2c_slave_model (scl, sda);
 
 	//
 	// parameters
