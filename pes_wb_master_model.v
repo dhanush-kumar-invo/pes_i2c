@@ -48,7 +48,7 @@
 // Change History:
 //
 
-module wb_master_model(clk, rst, adr, din, dout, cyc, stb, we, sel, ack, err, rty);
+module pes_wb_master_model(clk, rst, adr, din, dout, cyc, stb, we, sel, ack, err, rty);
 
 parameter dwidth = 32;
 parameter awidth = 32;
